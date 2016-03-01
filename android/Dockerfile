@@ -1,4 +1,4 @@
-FROM menglj/docker-imrad-dev
+FROM menglj/docker-imrad-dev:gst
 
 MAINTAINER meng lingjie"meng.lj@gmail.com"
 
