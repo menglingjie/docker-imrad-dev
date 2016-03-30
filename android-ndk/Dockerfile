@@ -1,4 +1,4 @@
-FROM menglj/docker-imrad-dev:android-release-0.1.1603020933
+FROM menglj/docker-imrad-dev:android-release
 
 ENV ANDROID_NDK_HOME /opt/android-ndk
 
