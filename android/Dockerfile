@@ -40,15 +40,15 @@ RUN cd /opt && wget --output-document=android-sdk.tgz --quiet ${ANDROID_SDK_URL}
 RUN echo y | android update sdk --no-ui --all --filter platform-tools
 RUN echo y | android update sdk --no-ui --all --filter extra-android-support
 
+# SDKs
+# Please keep these in descending order!
+RUN echo y | android update sdk --no-ui --all --filter ${ANDROID_APIS}
+
 # google apis
 # Please keep these in descending order!
 RUN echo y | android update sdk --no-ui --all --filter addon-google_apis-google-23
 RUN echo y | android update sdk --no-ui --all --filter addon-google_apis-google-22
 RUN echo y | android update sdk --no-ui --all --filter addon-google_apis-google-21
-
-# SDKs
-# Please keep these in descending order!
-RUN echo y | android update sdk --no-ui --all --filter ${ANDROID_APIS}
 
 # build tools
 # Please keep these in descending order!
